@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D5E66DFF-A91A-42E7-BCE0-4FCCCCC9EAE6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>IPP_ImageResize</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseIntelIPP>Sequential</UseIntelIPP>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir);$(ProjectDir)codec\image\jpeg\enc\include;$(ProjectDir)codec\image\jpeg\dec\include;$(ProjectDir)codec\image\jpeg\common\include;$(ProjectDir)io\uic_io\include;$(ProjectDir)core\uic\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Intel\Composer XE 2013 SP1.083\tbb42\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Intel\Composer XE 2013 SP1.083\tbb42\lib\intel64\vc11;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippi.lib;ipps.lib;ippcore.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="codec\image\jpeg\common\src\colorcomp.cpp" />
+    <ClCompile Include="codec\image\jpeg\common\src\jpegbase.cpp" />
+    <ClCompile Include="codec\image\jpeg\common\src\metadata.cpp" />
+    <ClCompile Include="codec\image\jpeg\dec\src\bitstreamin.cpp" />
+    <ClCompile Include="codec\image\jpeg\dec\src\dechtbl.cpp" />
+    <ClCompile Include="codec\image\jpeg\dec\src\decqtbl.cpp" />
+    <ClCompile Include="codec\image\jpeg\dec\src\jpegdec.cpp" />
+    <ClCompile Include="codec\image\jpeg\dec\src\jpegdecrst.cpp" />
+    <ClCompile Include="codec\image\jpeg\dec\src\uic_jpeg_dec.cpp" />
+    <ClCompile Include="codec\image\jpeg\enc\src\bitstreamout.cpp" />
+    <ClCompile Include="codec\image\jpeg\enc\src\enchtbl.cpp" />
+    <ClCompile Include="codec\image\jpeg\enc\src\encqtbl.cpp" />
+    <ClCompile Include="codec\image\jpeg\enc\src\jpegenc.cpp" />
+    <ClCompile Include="codec\image\jpeg\enc\src\jpegencrst.cpp" />
+    <ClCompile Include="codec\image\jpeg\enc\src\uic_jpeg_enc.cpp" />
+    <ClCompile Include="core\uic\src\uic_image.cpp" />
+    <ClCompile Include="core\uic\src\uic_new.cpp" />
+    <ClCompile Include="io\uic_io\src\membuffin.cpp" />
+    <ClCompile Include="io\uic_io\src\membuffout.cpp" />
+    <ClCompile Include="io\uic_io\src\stdfilein.cpp" />
+    <ClCompile Include="io\uic_io\src\stdfileout.cpp" />
+    <ClCompile Include="ippimage.cpp" />
+    <ClCompile Include="jpeg.cpp" />
+    <ClCompile Include="Resize.cpp" />
+    <ClCompile Include="ResizeTest.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="tools.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="codec\image\jpeg\common\include\colorcomp.h" />
+    <ClInclude Include="codec\image\jpeg\common\include\jpegbase.h" />
+    <ClInclude Include="codec\image\jpeg\common\include\metadata.h" />
+    <ClInclude Include="codec\image\jpeg\common\include\precomp.h" />
+    <ClInclude Include="codec\image\jpeg\dec\include\bitstreamin.h" />
+    <ClInclude Include="codec\image\jpeg\dec\include\dechtbl.h" />
+    <ClInclude Include="codec\image\jpeg\dec\include\decqtbl.h" />
+    <ClInclude Include="codec\image\jpeg\dec\include\jpegdec.h" />
+    <ClInclude Include="codec\image\jpeg\dec\include\uic_jpeg_dec.h" />
+    <ClInclude Include="codec\image\jpeg\enc\include\bitstreamout.h" />
+    <ClInclude Include="codec\image\jpeg\enc\include\enchtbl.h" />
+    <ClInclude Include="codec\image\jpeg\enc\include\encqtbl.h" />
+    <ClInclude Include="codec\image\jpeg\enc\include\jpegenc.h" />
+    <ClInclude Include="codec\image\jpeg\enc\include\uic_jpeg_enc.h" />
+    <ClInclude Include="core\uic\include\uic_addr_arith.h" />
+    <ClInclude Include="core\uic\include\uic_attachable_buffer.h" />
+    <ClInclude Include="core\uic\include\uic_base_image_codec.h" />
+    <ClInclude Include="core\uic\include\uic_base_image_decoder.h" />
+    <ClInclude Include="core\uic\include\uic_base_image_encoder.h" />
+    <ClInclude Include="core\uic\include\uic_base_stream.h" />
+    <ClInclude Include="core\uic\include\uic_base_stream_diagn.h" />
+    <ClInclude Include="core\uic\include\uic_base_stream_input.h" />
+    <ClInclude Include="core\uic\include\uic_base_stream_output.h" />
+    <ClInclude Include="core\uic\include\uic_defs.h" />
+    <ClInclude Include="core\uic\include\uic_exc_status.h" />
+    <ClInclude Include="core\uic\include\uic_fixed_array.h" />
+    <ClInclude Include="core\uic\include\uic_fixed_buffer.h" />
+    <ClInclude Include="core\uic\include\uic_general_algorithm.h" />
+    <ClInclude Include="core\uic\include\uic_geometry.h" />
+    <ClInclude Include="core\uic\include\uic_image.h" />
+    <ClInclude Include="core\uic\include\uic_math.h" />
+    <ClInclude Include="core\uic\include\uic_new.h" />
+    <ClInclude Include="image_resize\Resize.h" />
+    <ClInclude Include="io\uic_io\include\membuffin.h" />
+    <ClInclude Include="io\uic_io\include\membuffout.h" />
+    <ClInclude Include="io\uic_io\include\stdfilein.h" />
+    <ClInclude Include="io\uic_io\include\stdfileout.h" />
+    <ClInclude Include="ippimage.h" />
+    <ClInclude Include="jpeg.h" />
+    <ClInclude Include="Resize.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="tools.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

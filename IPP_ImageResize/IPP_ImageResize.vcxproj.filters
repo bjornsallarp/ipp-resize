@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ResizeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="io\uic_io\src\membuffin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="io\uic_io\src\membuffout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="io\uic_io\src\stdfilein.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="io\uic_io\src\stdfileout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="codec\image\jpeg\common\src\colorcomp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="codec\image\jpeg\common\src\jpegbase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="codec\image\jpeg\common\src\metadata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="codec\image\jpeg\dec\src\bitstreamin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="codec\image\jpeg\dec\src\dechtbl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="codec\image\jpeg\dec\src\decqtbl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="codec\image\jpeg\dec\src\jpegdec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="codec\image\jpeg\dec\src\jpegdecrst.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="codec\image\jpeg\dec\src\uic_jpeg_dec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="codec\image\jpeg\enc\src\bitstreamout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="codec\image\jpeg\enc\src\enchtbl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="codec\image\jpeg\enc\src\encqtbl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="codec\image\jpeg\enc\src\jpegenc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="codec\image\jpeg\enc\src\jpegencrst.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="codec\image\jpeg\enc\src\uic_jpeg_enc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\uic\src\uic_image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\uic\src\uic_new.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ippimage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="image_resize\Resize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="io\uic_io\include\membuffin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="io\uic_io\include\membuffout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="io\uic_io\include\stdfilein.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="io\uic_io\include\stdfileout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="codec\image\jpeg\common\include\colorcomp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="codec\image\jpeg\common\include\jpegbase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="codec\image\jpeg\common\include\metadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="codec\image\jpeg\common\include\precomp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="codec\image\jpeg\dec\include\bitstreamin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="codec\image\jpeg\dec\include\dechtbl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="codec\image\jpeg\dec\include\decqtbl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="codec\image\jpeg\dec\include\jpegdec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="codec\image\jpeg\dec\include\uic_jpeg_dec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="codec\image\jpeg\enc\include\bitstreamout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="codec\image\jpeg\enc\include\enchtbl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="codec\image\jpeg\enc\include\encqtbl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="codec\image\jpeg\enc\include\jpegenc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="codec\image\jpeg\enc\include\uic_jpeg_enc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\uic\include\uic_addr_arith.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\uic\include\uic_attachable_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\uic\include\uic_base_image_codec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\uic\include\uic_base_image_decoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\uic\include\uic_base_image_encoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\uic\include\uic_base_stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\uic\include\uic_base_stream_diagn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\uic\include\uic_base_stream_input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\uic\include\uic_base_stream_output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\uic\include\uic_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\uic\include\uic_exc_status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\uic\include\uic_fixed_array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\uic\include\uic_fixed_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\uic\include\uic_general_algorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\uic\include\uic_geometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\uic\include\uic_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\uic\include\uic_math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\uic\include\uic_new.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="jpeg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ippimage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
