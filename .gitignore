@@ -16,6 +16,10 @@
 *.sdf
 *.opensdf
 
+# Visual Studio project files
+# Solution User Options
+*.suo
+
 ipch/*
 *Thumbs.db
 *Debug*
