@@ -12,6 +12,9 @@
 *.la
 *.a
 
+# SQL Server Compct Edition Database File
+*.sdf
+
 ipch/*
 *Thumbs.db
 *Debug*
