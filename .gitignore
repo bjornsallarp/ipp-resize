@@ -14,6 +14,7 @@
 
 # SQL Server Compct Edition Database File
 *.sdf
+*.opensdf
 
 ipch/*
 *Thumbs.db
